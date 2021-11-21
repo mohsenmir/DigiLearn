@@ -39,7 +39,7 @@ module.exports = new class CourseController extends Controller {
             if(err) throw err;
             req.user.courses.push(newCourse._id);
             req.user.save();
-            res.json('create course');
+            res.json('دوره با موفقیت ثبت شد');
         })
     }
 
